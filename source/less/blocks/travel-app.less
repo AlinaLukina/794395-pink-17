@@ -1,0 +1,115 @@
+.travel-app__list {
+  padding: 0;
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.travel-app__input {
+  display: none;
+}
+
+.travel-app__label {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  position: relative;
+  cursor: pointer;
+}
+
+.travel-app__item {
+  padding-left: 70px;
+  margin-bottom: 45px;
+}
+
+.travel-app__legend {
+  padding-top: 40px;
+  background-color: #f2f2f2;
+  padding-left: 30px;
+  padding-right: 29px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.travel-app__input + label::before {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: -70px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.travel-app__input + label:hover {
+  &::before {
+    border: 2px solid @background-color;
+  }
+}
+
+.travel-app__input + label:active,
+:focus {
+  &::before {
+    border: 2px solid @purple;
+  }
+}
+
+.travel-app__input:checked + label::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -60px;
+  background-color: #d4345f;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+}
+
+.travel-app__wrap {
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .travel-app__legend {
+    padding: 0 23px;
+    width: auto;
+    margin-left: calc(50% - 160px);
+    background-color: transparent;
+  }
+
+  .travel-app__item {
+    padding-left: 97px;
+  }
+
+  .travel-app__input + label::before {
+    top: -7px;
+    left: -60px;
+  }
+
+  .travel-app__input:checked + label::after {
+    top: 4px;
+    left: -49px;
+  }
+
+  .travel-app__list {
+    max-width: 660px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travel-app__item {
+    padding-left: 115px;
+  }
+
+  .travel-app__legend {
+    margin-left: calc(50% - 175px);
+  }
+}

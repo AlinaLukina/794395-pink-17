@@ -1,0 +1,113 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+    margin-bottom: 83px;
+  }
+
+  .effect__main {
+    padding-left: 6px;
+  }
+
+  .effect__clock-picture {
+    font-size: 95px;
+    line-height: 249px;
+    color: #d22856;
+    position: relative;
+    font-weight: 700;
+    border: 16px solid #d22856;
+    border-radius: 50%;
+    padding: 14px 31px 28px 29px;
+    box-sizing: border-box;
+    margin: 0 82px 0 20px;
+  }
+
+  .effect__clock-picture::before {
+    content: "";
+    top: -88px;
+    left: -37px;
+    width: 242px;
+    height: 310px;
+    position: absolute;
+    background-image: url("../img/icon-timer.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .effect__wrapper {
+    display: flex;
+  }
+
+  .effect__main-link {
+    color: #d22856;
+  }
+
+  .effect__main-header {
+    font-size: 30px;
+    margin: 0;
+    line-height: 35px;
+    padding: 13px 105px 0 0;
+  }
+
+  .effect__main-description {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: #f2f2f2;
+    padding-top: 145px;
+    padding-bottom: 115px;
+  }
+
+  .effect__clock {
+    background-image: url("../img/timer.png");
+    background-size: contain;
+    background-position: 69% 24%;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 345px;
+    position: absolute;
+    top: -75px;
+    left: -16px;
+  }
+
+  .effect__wrapper {
+    position: relative;
+  }
+
+  .effect__main {
+    padding-left: 355px;
+  }
+
+  .effect__main-description {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 23px;
+    margin-bottom: 35px;
+    padding-right: 38px;
+  }
+
+  .effect__main-link {
+    font-size: 18px;
+  }
+
+  .effect__clock-picture {
+    position: absolute;
+    font-size: 120px;
+    line-height: 219px;
+    padding: 0 38px 4px 39px;
+    margin-right: 42px;
+    margin-top: 64px;
+    margin-left: 31px;
+  }
+}

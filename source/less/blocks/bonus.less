@@ -1,0 +1,35 @@
+.bonus {
+  margin-bottom: 14px;
+}
+
+.bonus__paragraph {
+  margin: 0;
+  line-height: 32px;
+  text-align: center;
+}
+
+.bonus__extra {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .bonus__paragraph {
+    margin: 94px 30px 54px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .bonus__extra {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .bonus__extra {
+    display: inline;
+  }
+
+  .bonus__paragraph {
+    margin: 91px 78px 54px;
+  }
+}

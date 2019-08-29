@@ -1,0 +1,131 @@
+.contacts__description {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: @background-color;
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 0 20px;
+  text-transform: initial;
+  margin: 45px 0 0;
+  line-height: 28px;
+}
+
+.contacts__map {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 320px;
+  margin: 12px auto 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 5000;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 61px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/icon-map-marker.svg");
+    top: 122px;
+    left: 140px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.contacts__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  width: 100%;
+  height: 523px;
+}
+
+.contacts__map picture {
+  margin: 0 auto;
+}
+
+.contacts__map img {
+  margin: -418px auto 0;
+  overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__description {
+    margin-top: 47px;
+  }
+
+  .contacts__title {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0 130px;
+  }
+
+  .contacts__map {
+    width: 660px;
+    max-height: 371px;
+    margin: 0 auto;
+
+    &::after {
+      top: 189px;
+      left: 311px;
+    }
+  }
+
+  .contacts__map img {
+    margin-top: -351px;
+    height: 848px;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__title {
+    margin-top: 65px;
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  .contacts__map {
+    max-height: 523px;
+    width: 100%;
+    margin-bottom: 71px;
+    max-width: 1200px;
+
+    &::before {
+      top: -1px;
+      height: 137px;
+      background-size: cover;
+    }
+
+    &::after {
+      top: 285px;
+      left: 581px;
+    }
+  }
+
+  .contacts__map img {
+    margin-top: -257px;
+    height: initial;
+    width: 1200px;
+  }
+}

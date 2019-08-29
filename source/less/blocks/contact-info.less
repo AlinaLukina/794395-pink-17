@@ -1,0 +1,51 @@
+.contact-info__legend {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-info__legend {
+    display: table;
+    padding: 0 25px;
+    margin-left: calc(50% - 135px);
+  }
+
+  .contact-info__span {
+    position: relative;
+  }
+
+  .contact-info__span::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 63px;
+    top: 0;
+    right: 0;
+    background-color: #e5e5e5;
+  }
+
+  .contact-info__phone::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-phone.svg");
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .contact-info__mail::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-mail.svg");
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

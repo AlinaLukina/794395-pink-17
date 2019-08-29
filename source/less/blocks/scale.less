@@ -1,0 +1,51 @@
+@media (min-width: @tablet-width) {
+  .scale__toggle {
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &:active,
+    &:focus {
+      background-color: @purple;
+    }
+
+    &--1 {
+      left: 142px;
+    }
+
+    &--2 {
+      left: 20px;
+    }
+
+    &--3 {
+      left: 97px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .scale__toggle {
+    &--1 {
+      left: 69px;
+    }
+
+    &--2 {
+      left: 243px;
+    }
+
+    &--3 {
+      left: 168px;
+    }
+  }
+}

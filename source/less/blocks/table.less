@@ -1,0 +1,151 @@
+.table {
+  border-collapse: collapse;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.table__row {
+  display: flex;
+}
+
+.table__head {
+  background-color: @background-color;
+  width: 280px;
+  padding: 20px 78px;
+  box-sizing: border-box;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+}
+
+.table__tariff {
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.table__price {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+.table__head--standard {
+  position: relative;
+}
+
+.table__head--standard::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 74px;
+  height: 74px;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+}
+
+.table__hit {
+  position: absolute;
+  top: 16px;
+  left: 11px;
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+@media (min-width: @tablet-width) {
+  .table {
+    margin: -7px auto 67px;
+    transform: none;
+    left: 0;
+  }
+
+  .table__tariff {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .table__price {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .table__hit {
+    top: 6px;
+    left: 8px;
+  }
+
+  .table__row {
+    display: table-row;
+    transform: none;
+  }
+
+  .table__head {
+    width: 155px;
+    padding: 12px 0 10px;
+  }
+
+  .table__head--standard::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+  }
+
+  .table__cell {
+    border: 2px solid #e5e5e5;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table {
+    margin-top: 58px;
+  }
+
+  .table__head {
+    padding: 22px 0;
+  }
+
+  .table__tariff {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .table__price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .table__head--standard::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 74px;
+    height: 74px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+  }
+
+  .table__hit {
+    top: 15px;
+    left: 11px;
+  }
+}

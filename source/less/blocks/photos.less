@@ -1,0 +1,63 @@
+.photos {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #283645;
+  height: 170px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 50% 23%;
+}
+
+.photos__title {
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  width: 190px;
+  font-size: 24px;
+  padding-top: 27px;
+  line-height: 31px;
+}
+
+@media (max-width: 659px) and (min-width: 321px) {
+  .photos {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 12%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photos {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    height: 328px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 28%;
+    padding: 0 20px;
+  }
+
+  .photos__title {
+    display: flex;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 300;
+    width: 375px;
+    align-items: center;
+    line-height: 57px;
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    height: 395px;
+    background-repeat: no-repeat;
+    background-size: 2560px 853px;
+    background-position: 50% 17%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .photos__title {
+    padding-top: 175px;
+  }
+}

@@ -1,0 +1,45 @@
+.copyright__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: @background-color;
+  margin-top: 17px;
+}
+
+.copyright__link {
+  width: 26.943px;
+  height: 34.09px;
+  display: block;
+  padding-top: 11px;
+}
+
+.copyright__link svg {
+  fill: @purple;
+
+  &:hover {
+    fill: @background-color;
+  }
+
+  &:active,
+  &:focus {
+    fill: @background-color;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    padding-right: 15px;
+    margin-top: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+    margin-top: 19px;
+  }
+
+  .copyright__link {
+    padding-top: 14px;
+  }
+}

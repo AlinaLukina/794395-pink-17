@@ -1,0 +1,38 @@
+.main-table {
+  overflow: hidden;
+  background-color: #f2f2f2;
+  margin-top: 40px;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/bg-triangle-white.svg");
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 92px;
+    background-size: contain;
+    top: 64px;
+    left: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-table {
+    position: relative;
+    margin-top: 20px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-size: contain;
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+
+    &::before {
+      height: 96px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-table {
+    padding-bottom: 29px;
+  }
+}
