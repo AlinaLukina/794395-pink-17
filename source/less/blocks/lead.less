@@ -34,10 +34,9 @@
 .lead__description--photo {
   font-size: 14px;
   line-height: 30px;
-  width: 280px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 44px 18px 0;
+  padding: 44px 35px 0;
   font-weight: 400;
 }
 
@@ -52,6 +51,11 @@
   background-size: cover;
   min-height: 170px;
   margin-bottom: 40px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-position: 50% 25%;
+  }
 }
 
 @media (max-width: 659px) and (min-width: 321px) {
@@ -63,10 +67,15 @@
     margin-bottom: 40px;
     display: flex;
     background-size: inherit;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1210px;
+    }
   }
 
   .lead__description--form {
-    margin: initial;
+    margin: 0;
   }
 }
 
@@ -86,8 +95,7 @@
   .lead__description--photo {
     font-size: 18px;
     line-height: 30px;
-    width: 490px;
-    padding-top: 37px;
+    padding: 37px 45px 0;
     font-weight: 500;
   }
 
@@ -100,7 +108,7 @@
     font-size: 50px;
     color: #ffffff;
     font-weight: 300;
-    margin: initial;
+    margin: 0;
     padding: 66px 40px 17px;
     line-height: 60px;
   }
@@ -116,6 +124,11 @@
     background-position: 50% 28%;
     background-color: @background-color;
     min-height: 327px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1210px;
+    }
   }
 }
 
@@ -147,6 +160,11 @@
     background-color: @background-color;
     min-height: 395px;
     background-position: 50% 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-position: 50% 12px;
+    }
   }
 
   .lead__description--offer {
@@ -157,7 +175,7 @@
   .lead__description--photo {
     font-size: 19px;
     width: auto;
-    padding: 0 295px;
+    padding: 0 184px;
     line-height: 30px;
     margin-top: 90px;
   }

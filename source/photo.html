@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,10 +7,14 @@
   <link href="css/style.min.css" rel="stylesheet">
   <script src="js/picturefill.js"></script>
 </head>
-
 <body>
   <header class="page-header">
+    <!--  page-header--closed показывает фоновое изображение в шапке закрытого меню-->
+    <!--  page-header--opened убирает фоновое изоюражение-->
     <nav class="page-header__nav main-nav main-nav--nojs">
+      <!-- main-nav--nojs показывает открытое меню при отключенном JS-->
+      <!--  main-nav--closed скрывает пункты меню-->
+      <!--  main-nav--opened показывает меню-->
       <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo">
           <svg width="146.3" height="40.375" viewBox="0 0 147 41">
@@ -39,15 +42,16 @@
         </a>
       </div>
       <button class="page-header__button" type="button">
+        <!--  page-header__toggle--closed показывает иконку "гармургера" при закрытом меню-->
+        <!--  page-header__toggle--opened показывает крестик при открытом меню-->
         <svg class="page-header__toggle page-header__toggle--opened" width="40" height="40" viewBox="0 0 40 40">
-          <g class="page-header__toggle__svgclose">
+          <g class="page-header__svgclose">
             <path
               d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z" />
             <path
               d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z" />
           </g>
-
-          <g class="page-header__toggle__svgopen">
+          <g class="page-header__svgopen">
             <path
               d="M15.087 11.933l8.56-8.559a.75.75 0 000-1.061L21.554.22a.747.747 0 00-1.06 0l-8.561 8.56L3.373.22a.771.771 0 00-1.061 0L.22 2.313a.75.75 0 000 1.061l8.56 8.559-8.56 8.559a.751.751 0 000 1.062l2.093 2.094a.744.744 0 001.06 0l8.561-8.56 8.56 8.56a.746.746 0 001.06 0l2.093-2.094a.751.751 0 000-1.062l-8.56-8.559z" />
           </g>
@@ -56,7 +60,7 @@
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="index.html">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link">Фотографии</a>
@@ -70,7 +74,6 @@
       </ul>
     </nav>
   </header>
-
   <main class="photo-main">
     <section class="photos">
       <h1 class="photos__title">Фотографии пользователей</h1>
@@ -82,19 +85,19 @@
       <h2 class="visually-hidden">Публикации пользователей</h2>
       <ul class="publications__header">
         <li class="publications__item publications__item--main">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@1x.webp 2x">
-              <source class="publications__panorama" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source class="publications__panorama" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source class="publications__panorama" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img class="publications__panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
             </picture>
             <div class="publications__sticker">
               панорама дня
             </div>
-          </div>
+          </a>
           <div class="publications__review publications__review--main">
             <div class="publications__box">
               <h3 class="publications__author">Анна</h3>
@@ -102,7 +105,7 @@
             </div>
             <p class="publications__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
               задавайте свои вопросы!</p>
-            <div class="publications__wrapper"> <button class="publications__button">
+            <div class="publications__wrapper"> <button class="publications__button" type="button">
                 <span class="visually-hidden publications__heat-btn">like</span>
               </button>
               <p class="publications__like">Нравится: 215</p>
@@ -110,118 +113,115 @@
           </div>
         </li>
       </ul>
-
       <ul class="publications__list">
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@1x.webp 2x">
-              <source class="publications__image" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
               <img class="publications__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="car">
             </picture>
-          </div>
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Левон</h3>
             <p class="publications__time">(5 часов назад)</p>
             <p class="publications__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="publications__wrapper"> <button class="publications__button">
+            <div class="publications__wrapper">
+              <button class="publications__button" type="button">
                 <span class="visually-hidden publications__heat-btn">like</span>
               </button>
               <p class="publications__like">Нравится: 356</p>
             </div>
           </div>
         </li>
-
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@1x.webp 2x">
-              <source class="publications__image" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x ">
               <img class="publications__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Drums">
             </picture>
-          </div>
-
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Антон</h3>
             <p class="publications__time">(12 часов назад)</p>
             <p class="publications__comment publications__comment--oneline">Соседи будут рады!</p>
-            <div class="publications__wrapper"> <button class="publications__button">
+            <div class="publications__wrapper"> <button class="publications__button" type="button">
                 <span class="visually-hidden publications__heat-btn">like</span>
               </button>
               <p class="publications__like">Нравится: 666</p>
             </div>
           </div>
         </li>
-
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@1x.webp 2x">
-              <source class="publications__image" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@1x.jpg 2x">
+              <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@1x.jpg 2x">
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
               <img class="publications__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="sky">
             </picture>
-          </div>
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Борис</h3>
             <p class="publications__time">(20 часов назад)</p>
             <p class="publications__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="publications__wrapper"> <button class="publications__button">
+            <div class="publications__wrapper">
+              <button class="publications__button" type="button">
                 <span class="visually-hidden publications__heat-btn">like</span>
               </button>
               <p class="publications__like">Нравится: 215</p>
             </div>
           </div>
         </li>
-
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@1x.webp 2x">
-              <source class="publications__image" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
               <img class="publications__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="fest">
             </picture>
-          </div>
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Сергей</h3>
             <p class="publications__time">(25 часов назад)</p>
             <p class="publications__comment publications__comment--oneline">Самая кубанская в мире!</p>
-            <div class="publications__wrapper"> <button class="publications__button">
+            <div class="publications__wrapper">
+              <button class="publications__button" type="button">
                 <span class="visually-hidden publications__heat-btn">like</span>
               </button>
               <p class="publications__like">Нравится: 4</p>
             </div>
           </div>
         </li>
-
-
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@1x.webp 2x">
-              <source class="publications__image" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
               <img class="publications__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="green-mountains">
             </picture>
-          </div>
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Максим</h3>
             <p class="publications__time">(40 часов назад)</p>
             <p class="publications__comment publications__comment--oneline">Где снег-то?</p>
-            <div class="publications__wrapper"> <button class="publications__button">
+            <div class="publications__wrapper">
+              <button class="publications__button" type="button">
                 <span class="visually-hidden publications__heat-btn">like</span>
               </button>
               <p class="publications__like">Нравится: 150</p>
@@ -229,26 +229,26 @@
           </div>
         </li>
         <li class="publications__item">
-          <div class="publications__photo">
+          <a href="" class="publications__photo">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@1x.webp 2x">
-              <source class="publications__image" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source class="publications__image" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
               <source class="publications__image" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
               <img class="publications__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="sunrise">
             </picture>
-          </div>
+          </a>
           <div class="publications__review">
             <h3 class="publications__author">Надежда</h3>
             <p class="publications__time">(45 часов назад)</p>
             <p class="publications__comment publications__comment--oneline">Всем GM и взаимные лайки!</p>
-            <div class="publications__wrapper"> <button class="publications__button">
+            <div class="publications__wrapper">
+              <button class="publications__button" type="button">
                 <span class="visually-hidden publications__heat-btn">like</span>
               </button>
               <p class="publications__like">Нравится: 2560</p>
             </div>
-
           </div>
         </li>
       </ul>
@@ -264,32 +264,31 @@
         <div class="upload__wrapper">
           <div class="upload__image">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@1x.webp 2x">
-              <source class="upload__image-picture" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source class="upload__image-picture" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source class="upload__image-picture" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x ">
               <img class="upload__image-picture" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="фото">
             </picture>
           </div>
           <div class="upload__subwrapper">
             <div class="upload__filters">
-              <button class="upload__filters-toggle" type="button" name="button"></button>
               <div class="upload__filters-row upload__filters-row--1">
-                <button class="upload__filters-icon">
+                <button class="upload__filters-icon" type="button">
                   <svg class="upload__icon upload__icon--2" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="22px" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
                     xml:space="preserve">
                     <path fill="none" d="M0,0h48v48H0V0z"></path>
                     <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"></path>
                   </svg>
                 </button>
-                <div class="upload__filters-scale scale">
-                  <button class="scale__toggle scale__toggle--1"> <span class="visually-hidden">filter settings</span>
+                <div class="upload__filters-scale upload__filters-scale--active scale">
+                  <button class="scale__toggle scale__toggle--1" type="button"> <span class="visually-hidden">filter settings</span>
                   </button>
                 </div>
               </div>
               <div class="upload__filters-row upload__filters-row--2">
-                <button class="upload__filters-icon">
+                <button class="upload__filters-icon" type="button">
                   <svg class="upload__icon upload__icon--1" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
                     xml:space="preserve">
                     <path fill="none" d="M0,0h48v48H0V0z"></path>
@@ -300,12 +299,12 @@
                   </svg>
                 </button>
                 <div class="upload__filters-scale scale">
-                  <button class="scale__toggle scale__toggle--2"><span class="visually-hidden">filter settings</span>
+                  <button class="scale__toggle scale__toggle--2" type="button"><span class="visually-hidden">filter settings</span>
                   </button>
                 </div>
               </div>
               <div class="upload__filters-row upload__filters-row--3">
-                <button class="upload__filters-icon">
+                <button class="upload__filters-icon" type="button">
                   <svg class="upload__icon upload__icon--3" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="-35.422 -7.96 31.92 31.92"
                     enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                     <path
@@ -315,7 +314,7 @@
                   </svg>
                 </button>
                 <div class="upload__filters-scale scale">
-                  <button class="scale__toggle scale__toggle--3"> <span class="visually-hidden">filter settings</span>
+                  <button class="scale__toggle scale__toggle--3" type="button"> <span class="visually-hidden">filter settings</span>
                   </button>
                 </div>
               </div>
@@ -329,7 +328,6 @@
       </div>
     </section>
   </main>
-
   <footer class="page-footer">
     <div class="container container--main">
       <div class="page-footer__wrapper">
@@ -383,7 +381,6 @@
                     d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z">
                   </path>
                 </svg>
-
               </a>
             </li>
             <li class="social__item">
@@ -412,5 +409,4 @@
   </footer>
   <script src="js/menu.js"> </script>
 </body>
-
 </html>

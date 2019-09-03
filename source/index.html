@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,11 +7,14 @@
   <link href="css/style.min.css" rel="stylesheet">
   <script src="js/picturefill.js"></script>
 </head>
-
 <body>
-
   <header class="page-header">
+    <!--  page-header--closed показывает фоновое изображение в шапке закрытого меню-->
+    <!--  page-header--opened убирает фоновое изоюражение-->
     <nav class="page-header__nav main-nav main-nav--nojs">
+      <!-- main-nav--nojs показывает открытое меню при отключенном JS-->
+      <!--  main-nav--closed скрывает пункты меню-->
+      <!--  main-nav--opened показывает меню-->
       <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo">
           <svg width="146.3" height="40.375" viewBox="0 0 147 41">
@@ -40,15 +42,16 @@
         </a>
       </div>
       <button class="page-header__button" type="button">
+        <!--  page-header__toggle--closed показывает иконку "гармургера" при закрытом меню-->
+        <!--  page-header__toggle--opened показывает крестик при открытом меню-->
         <svg class="page-header__toggle page-header__toggle--opened" width="40" height="40" viewBox="0 0 40 40">
-          <g class="page-header__toggle__svgclose">
+          <g class="page-header__svgclose">
             <path
               d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z" />
             <path
               d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z" />
           </g>
-
-          <g class="page-header__toggle__svgopen">
+          <g class="page-header__svgopen">
             <path
               d="M15.087 11.933l8.56-8.559a.75.75 0 000-1.061L21.554.22a.747.747 0 00-1.06 0l-8.561 8.56L3.373.22a.771.771 0 00-1.061 0L.22 2.313a.75.75 0 000 1.061l8.56 8.559-8.56 8.559a.751.751 0 000 1.062l2.093 2.094a.744.744 0 001.06 0l8.561-8.56 8.56 8.56a.746.746 0 001.06 0l2.093-2.094a.751.751 0 000-1.062l-8.56-8.559z" />
           </g>
@@ -71,7 +74,6 @@
       </ul>
     </nav>
   </header>
-
   <main class="page-main">
     <div class="background">
       <div class="container container--main">
@@ -81,26 +83,22 @@
           <div class="app__wrapper">
             <a class="app__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
           </div>
-
           <div class="app__hand">
             <span class="visually-hidden"> телефон с рукой </span>
           </div>
           <ul class="app__list applications-list">
             <li class="app__item">
               <a href="https://www.apple.com/ru/itunes/">
-
                 <img class="app__item-apple" src="img/logo-apple.svg" width="47" height="59" alt="apple-application">
               </a>
             </li>
             <li class="app__item">
               <a href="https://play.google.com/store">
-
                 <img class="app__item-android" src="img/logo-android.svg" width="43" height="47" alt="android-application">
               </a>
             </li>
             <li class="app__item">
               <a href="https://www.microsoft.com/ru-ru/store/">
-
                 <img class="app__item-microsoft" src="img/logo-microsoft.svg" width="44" height="41" alt="microsoft-application">
               </a>
             </li>
@@ -109,7 +107,6 @@
         </section>
       </div>
     </div>
-
     <section class="lead">
       <div class="container">
         <h2 class="visually-hidden">Наши преимущества</h2>
@@ -118,7 +115,6 @@
       </div>
     </section>
     <section class="advantages">
-
       <ul class="advantages__list">
         <li class="advantages__list-item advantages__list-item--1">
           <h3 class="advantages__list-title">Поднимает настроение</h3>
@@ -133,13 +129,12 @@
           </p>
         </li>
         <li class="advantages__list-item advantages__list-item--3">
-          <h3 class="advantages__list-title">Заводит новых друзей</h3>
+          <h3 class="advantages__list-title">Заводит новых&nbsp;друзей</h3>
           <p class="advantages__list-description">
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </p>
         </li>
       </ul>
-
     </section>
     <section class="effect">
       <div class="container">
@@ -161,7 +156,6 @@
       </div>
     </section>
     <section class="review">
-
       <p class="review__name">Николай Петров</p>
       <p class="review__id">25 лет, водитель трамвая</p>
       <button class="review__button review__button--left" type="button" name="button">
@@ -175,20 +169,24 @@
       </button>
       <div class="review__slider slider">
         <ul class="slider__list">
-          <li class="slider__list-item slider__list-item--active">
-            <span class="visually-hidden">листать далее</span>
+          <li>
+            <button class="slider__list-item slider__list-item--active">
+              <span class="visually-hidden">листать далее</span>
+            </button>
           </li>
-          <li class="slider__list-item ">
+          <li>
+          <button class="slider__list-item">
             <span class="visually-hidden">листать далее</span>
+          </button>
           </li>
-          <li class="slider__list-item ">
-            <span class="visually-hidden">листать далее</span>
+          <li>
+            <button class="slider__list-item">
+              <span class="visually-hidden">листать далее</span>
+            </button>
           </li>
         </ul>
       </div>
-
     </section>
-
     <section class="main-table">
       <table class="table">
         <tr class="table__row">
@@ -210,63 +208,94 @@
         <tr class="table__row table-row">
           <td class="table-row__filter table-row__filter--tablet">Розовый фильтр</td>
           <td class="table__cell">
-            <div class="table-row__filter table-row__filter--check table-row__check"><span class="table-row__mob">Розовый фильтр</span><span class="visually-hidden">check</span></div>
+            <div class="table-row__filter table-row__filter--check table-row__check">
+              <span class="table-row__mob">Розовый фильтр</span>
+              <span class="visually-hidden">check</span>
+            </div>
           </td>
           <td class="table__cell">
-            <div class="table-row__filter table-row__filter--check table-row__check"><span class="table-row__mob">Розовый фильтр</span><span class="visually-hidden">check</span></div>
+            <div class="table-row__filter table-row__filter--check table-row__check">
+              <span class="table-row__mob">Розовый фильтр</span>
+              <span class="visually-hidden">check</span>
+            </div>
           </td>
           <td class="table__cell">
-            <div class="table-row__filter table-row__filter--check table-row__check"><span class="table-row__mob">Розовый фильтр</span><span class="visually-hidden">check</span></div>
+            <div class="table-row__filter table-row__filter--check table-row__check">
+              <span class="table-row__mob">Розовый фильтр</span>
+              <span class="visually-hidden">check</span>
+            </div>
           </td>
         </tr>
         <tr class="table__row table-row">
           <td class="table-row__filter table-row__filter--tablet">Смайлики</td>
           <td class="table__cell">
-            <div class="table-row__filter table-row__filter--cross table-row__cross"><span class="table-row__mob">Смайлики</span><span class="visually-hidden">cross</span></div>
+            <div class="table-row__filter table-row__filter--cross table-row__cross">
+              <span class="table-row__mob">Смайлики</span>
+              <span class="visually-hidden">cross</span>
+            </div>
           </td>
           <td class="table__cell">
-            <div class="table-row__filter table-row__filter--check table-row__check"><span class="table-row__mob">Смайлики</span><span class="visually-hidden">check</span></div>
+            <div class="table-row__filter table-row__filter--check table-row__check">
+              <span class="table-row__mob">Смайлики</span>
+              <span class="visually-hidden">check</span>
+            </div>
           </td>
           <td class="table__cell">
-            <div class="table-row__filter table-row__filter--check table-row__check"><span class="table-row__mob">Смайлики</span><span class="visually-hidden">check</span></div>
+            <div class="table-row__filter table-row__filter--check table-row__check">
+              <span class="table-row__mob">Смайлики</span>
+              <span class="visually-hidden">check</span>
+            </div>
           </td>
         </tr>
         <tr class="table__row table-row table-row--content">
           <td class="table-row__filter table-row__filter--tablet">Комментарии</td>
           <td class="table__cell">
-            <div class="table-row__filter table-row__filter--cross table-row__cross"><span class="table-row__mob">Комментарии</span><span class="visually-hidden">cross</span></div>
+            <div class="table-row__filter table-row__filter--cross table-row__cross">
+              <span class="table-row__mob">Комментарии</span>
+              <span class="visually-hidden">cross</span>
+            </div>
           </td>
           <td class="table__cell">
-            <div class="table-row__filter table-row__filter--cross table-row__cross"><span class="table-row__mob">Комментарии</span><span class="visually-hidden">cross</span></div>
+            <div class="table-row__filter table-row__filter--cross table-row__cross">
+              <span class="table-row__mob">Комментарии</span>
+              <span class="visually-hidden">cross</span>
+            </div>
           </td>
           <td class="table__cell">
-            <div class="table-row__filter table-row__filter--check table-row__check"><span class="table-row__mob">Комментарии</span><span class="visually-hidden">check</span></div>
+            <div class="table-row__filter table-row__filter--check table-row__check">
+              <span class="table-row__mob">Комментарии</span>
+              <span class="visually-hidden">check</span>
+            </div>
           </td>
         </tr>
       </table>
     </section>
     <div class="price-slider slider">
       <ul class="slider__items">
-        <li class="slider__object">
-          <span class="visually-hidden">листать далее</span>
+        <li>
+          <button class="slider__object">
+            <span class="visually-hidden">листать далее</span>
+          </button>
         </li>
-        <li class="slider__object slider__object--active">
-          <span class="visually-hidden">листать далее</span>
+        <li>
+          <button class="slider__object slider__object--active">
+            <span class="visually-hidden">листать далее</span>
+          </button>
         </li>
-        <li class="slider__object">
-          <span class="visually-hidden">листать далее</span>
+        <li>
+          <button class="slider__object">
+            <span class="visually-hidden">листать далее</span>
+          </button>
         </li>
       </ul>
     </div>
-
     <section class="contuct-us contacts">
       <div class="contacts__description">
-        <h3 class="contacts__title">Остались вопросы?
-          Свяжитесь с нами!</h3>
+        <p class="contacts__title">Остались вопросы?</p>
+        <p class="contacts__title contacts__title--sub">Свяжитесь с нами!</p>
       </div>
       <div class="container">
         <div class="contacts-list">
-
           <div class="contacts-list__paragraph contacts-list__paragraph--call">
             <p class="contacts-list__header">Звоните</p>
             <p class="contacts-list__description">+7 (812) 555-66-66</p>
@@ -283,10 +312,10 @@
       </div>
       <div class="contacts__map">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x ,img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x ,img/bg-map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x ,img/bg-map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x ,img/bg-map-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
           <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="карта">
         </picture>
@@ -347,7 +376,6 @@
                     d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z">
                   </path>
                 </svg>
-
               </a>
             </li>
             <li class="social__item">
@@ -374,8 +402,6 @@
       </div>
     </div>
   </footer>
-
   <script src="js/menu.js"> </script>
 </body>
-
 </html>

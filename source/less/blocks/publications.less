@@ -19,7 +19,7 @@
 
 .publications__list {
   margin: 0 auto;
-  width: 320px;
+  max-width: 320px;
   list-style: none;
   padding: 0;
 }
@@ -27,6 +27,8 @@
 .publications__item--main {
   margin: 0 auto;
   padding: 0;
+  position: relative;
+  max-width: 1200px;
 }
 
 .publications__review {
@@ -94,6 +96,8 @@
 .publications__item {
   margin: 0 auto;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .publications__image {
@@ -104,9 +108,8 @@
 }
 
 .publications__photo {
-  position: relative;
-  max-width: 320px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .publications__sticker {
@@ -139,12 +142,11 @@
 
   .publications__photo {
     margin: 0 auto;
-    max-width: 660px;
   }
 
   .publications__list {
     display: flex;
-    width: 620px;
+    max-width: 620px;
     flex-wrap: wrap;
     padding: 0;
     margin: 0 auto;
@@ -217,7 +219,7 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    max-width: 300px;
   }
 
   .publications__item:nth-of-type(2n+1) {
@@ -226,9 +228,8 @@
 
   .publications__item--main {
     width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 50px;
+    max-width: 660px;
+    margin: 0 auto 50px;
   }
 
   .publications__wrapper {
@@ -237,8 +238,12 @@
   }
 
   .publications__panorama {
-    width: initial;
+    width: auto;
     margin-left: -20px;
+  }
+
+  .publications__header .publications__item {
+    margin-right: auto;
   }
 }
 
@@ -248,18 +253,17 @@
   }
 
   .publications__list {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
   }
 
   .publications__photo {
-    max-width: 1200px;
     margin: 0 auto;
   }
 
   .publications__sticker {
     top: 55px;
-    right: 132px;
+    right: 10px;
   }
 
   .publications__comment {
@@ -269,6 +273,8 @@
 
   .publications__item--main {
     width: 100%;
+    max-width: 1800px;
+    margin: 0 auto 50px;
   }
 
   .publications__review {
@@ -291,5 +297,17 @@
   .publications__item {
     margin-right: 20px;
     display: block;
+  }
+
+  .publications__panorama {
+    width: auto;
+    margin-left: -120px;
+  }
+
+  .publications__header {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1000px;
   }
 }

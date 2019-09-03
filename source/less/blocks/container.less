@@ -1,0 +1,39 @@
+.container {
+  max-width: 960px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container--main {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: initial;
+}
+
+.container--mob {
+  background-color: #f2f2f2;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .container--mob {
+    background-color: #ffffff;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 959px) {
+  .container--mobile {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container--form {
+    width: 50%;
+  }
+}

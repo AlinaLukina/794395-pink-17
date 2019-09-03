@@ -16,6 +16,10 @@
   margin-top: 18px;
 }
 
+.slider__items li {
+  display: flex;
+}
+
 .slider__object {
   width: 6px;
   height: 6px;
@@ -23,6 +27,16 @@
   border-radius: 50%;
   margin-right: 7px;
   box-sizing: border-box;
+  padding: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.1;
+  }
 }
 
 .slider__object--active {
@@ -33,6 +47,11 @@
   border-radius: 50%;
   margin-left: 8px;
   margin-right: 15px;
+  padding: 0;
+}
+
+.slider__list li {
+  display: flex;
 }
 
 .slider__list-item {
@@ -43,6 +62,7 @@
   border-radius: 50%;
   margin-right: 17px;
   box-sizing: border-box;
+  padding: 0;
 
   &:hover {
     opacity: 0.6;
@@ -63,6 +83,7 @@
   border-radius: 50%;
   margin-left: 8px;
   margin-right: 15px;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
