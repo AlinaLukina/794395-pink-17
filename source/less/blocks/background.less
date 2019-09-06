@@ -1,12 +1,12 @@
 .background {
   background-color: #1d2631;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
   overflow: hidden;
-}
 
-@media (min-width: 321px) and (max-width: 659px) {
-  .background {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% 113%;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: contain;
   }
 }
 

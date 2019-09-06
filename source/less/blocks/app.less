@@ -1,25 +1,25 @@
 .app {
   display: block;
   position: relative;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   max-width: 320px;
   margin: 0 auto;
   min-height: 207px;
   padding-top: 391px;
   background-position-y: -67px;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: contain;
-  }
 }
 
 .app__header {
-  display: none;
-  font-size: 40px;
-  color: #ffffff;
-  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 15px 0px 15px;
+  text-align: center;
+  line-height: 30px;
 }
 
 .app__hand {
@@ -80,7 +80,11 @@
   justify-content: space-between;
   align-items: baseline;
 }
-
+@media (min-width: 321px) and (max-width: 659px) {
+  .app {
+    background-image: none;
+  }
+}
 @media (min-width: @tablet-width) {
   .app {
     background-image: none;
@@ -101,11 +105,13 @@
 
   .app__header {
     display: block;
+    position: static;
     text-align: center;
     padding-top: 91px;
     width: 245px;
     line-height: 48px;
     margin: 0 auto 30px;
+    font-size: 39px;
   }
 
   .app__hand {
@@ -141,12 +147,6 @@
     margin-top: 45px;
     align-items: baseline;
     padding: 0 47px;
-  }
-}
-
-@media (min-width: 321px) and (max-width: 659px) {
-  .app {
-    background-image: none;
   }
 }
 

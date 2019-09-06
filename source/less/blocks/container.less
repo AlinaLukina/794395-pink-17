@@ -11,7 +11,7 @@
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: initial;
+  padding: 0;
 }
 
 .container--mob {
@@ -24,6 +24,10 @@
     background-color: #ffffff;
     padding: 0 20px;
   }
+
+  .container--index {
+    width: 660px;
+  }
 }
 
 @media (max-width: 959px) {
@@ -35,5 +39,9 @@
 @media (min-width: @desktop-width) {
   .container--form {
     width: 50%;
+  }
+
+  .container--index {
+    width: 960px;
   }
 }
