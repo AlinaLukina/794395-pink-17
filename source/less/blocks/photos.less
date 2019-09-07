@@ -4,11 +4,11 @@
   height: 170px;
   color: #ffffff;
   background-repeat: no-repeat;
+  background-size: 100% 480px;
   background-position: 50% 23%;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: cover;
     background-position: 50% 24%;
   }
 }
@@ -21,19 +21,6 @@
   font-size: 24px;
   padding-top: 27px;
   line-height: 31px;
-}
-
-@media (max-width: 659px) and (min-width: 321px) {
-  .photos {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% 12%;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1187px 613px;
-      background-position: 50% 14%;
-    }
-  }
 }
 
 @media (min-width: @tablet-width) {

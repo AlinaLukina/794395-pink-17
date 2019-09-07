@@ -47,35 +47,14 @@
 .lead--form {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: @background-color;
+  background-size: 100% 480px;
   background-position: 50% 23%;
-  background-size: cover;
   min-height: 170px;
   margin-bottom: 40px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-position: 50% 25%;
-  }
-}
-
-@media (max-width: 659px) and (min-width: 321px) {
-  .lead--form {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-color: #283645;
-    background-position: 50% 13%;
-    min-height: 170px;
-    margin-bottom: 40px;
-    display: flex;
-    background-size: inherit;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1210px;
-    }
-  }
-
-  .lead__description--form {
-    margin: 0;
+    background-position: 50% 24%;
   }
 }
 
@@ -168,7 +147,7 @@
   }
 
   .lead__description--offer {
-    margin: 0 100px 0 93px;
+    margin: 0 100px 0 100px;
     line-height: 60px;
   }
 
@@ -177,6 +156,6 @@
     width: auto;
     padding: 0 184px;
     line-height: 30px;
-    margin-top: 90px;
+    margin-top: 91px;
   }
 }
